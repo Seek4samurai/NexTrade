@@ -5,6 +5,7 @@ node_modules
 /.pnp
 .pnp.js
 NFT jpegs
+assets
 
 # testing
 /coverage
