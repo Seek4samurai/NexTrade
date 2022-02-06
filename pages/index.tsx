@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import Header from "../components/header";
 
 const Home: NextPage = () => {
   return (
@@ -8,7 +9,7 @@ const Home: NextPage = () => {
         <title>NexToken</title>
         <meta name="description" content="Buy/Sell NFTs" />
       </Head>
-      <div className="text-blue-500">Hello</div>
+      <Header></Header>
     </div>
   );
 };
