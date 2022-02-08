@@ -9,6 +9,7 @@ import Hero from "../components/Hero";
 import openseaLogo from "../assets/opensea.png";
 import LoginHeader from "../components/LoginHeader";
 import { AiOutlineGithub } from "react-icons/ai";
+import toast, { Toaster } from "react-hot-toast";
 
 const style = {
   bgWrapper: `relative`,
@@ -32,6 +33,18 @@ const style = {
 };
 
 const Home: NextPage = () => {
+  const welcomeToast = (userName, toastHandler = toast) => {
+    toastHandler.success(
+      `Welcome back ${userName !== "Unnamed" ? `${userName}` : ` `}!`,
+      {
+        style: {
+          background: "#fff",
+          color: "#000",
+        },
+      }
+    );
+  };
+
   const { address, connectWallet } = useWeb3();
   useEffect(() => {
     // if user address doesn't exist
@@ -46,11 +59,14 @@ const Home: NextPage = () => {
         walletAddress: address,
       };
       const result = await client.createIfNotExists(userDoc);
+      welcomeToast(result.userName);
     })();
   }, [address]);
 
   return (
     <div className={style.wrapper}>
+      <Toaster position="bottom-center" reverseOrder={false}></Toaster>
+
       {address ? (
         <>
           <Head>
