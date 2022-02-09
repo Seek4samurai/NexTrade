@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@3rdweb/hooks": "^1.9.2",
+    "@3rdweb/sdk": "^1.39.4",
     "@sanity/cli": "^2.26.0",
     "@sanity/client": "^3.0.3",
     "next": "12.0.10",
