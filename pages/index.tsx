@@ -70,7 +70,7 @@ const Home: NextPage = () => {
       {address ? (
         <>
           <Head>
-            <title>NexToken</title>
+            <title>NexTrade</title>
             <meta name="description" content="Buy/Sell NFTs" />
           </Head>
           <Header></Header>
@@ -79,7 +79,7 @@ const Home: NextPage = () => {
       ) : (
         <>
           <Head>
-            <title>NexToken - Login</title>
+            <title>NexTrade - Login</title>
             <meta name="description" content="Buy/Sell NFTs" />
           </Head>
           <LoginHeader></LoginHeader>
@@ -92,7 +92,7 @@ const Home: NextPage = () => {
                       <div className={style.logoContainer}>
                         <Image src={openseaLogo} height={40} width={40}></Image>
                         <div className={style.logoText}>Nex</div>
-                        <span className={style.logoText2}>Token</span>
+                        <span className={style.logoText2}>Trade</span>
                       </div>
                       🦊
                     </div>
@@ -106,7 +106,7 @@ const Home: NextPage = () => {
                     </button>
                     <div className={style.GitDetails}>Help us improve</div>
                     <a
-                      href="https://github.com/seek4samurai/nexToken"
+                      href="https://github.com/seek4samurai/nextrade"
                       target="_blank"
                     >
                       <AiOutlineGithub

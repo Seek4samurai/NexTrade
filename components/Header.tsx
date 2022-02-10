@@ -26,7 +26,7 @@ const Header = () => {
         <div className={style.logoContainer}>
           <Image src={openseaLogo} height={40} width={40}></Image>
           <div className={style.logoText}>Nex</div>
-          <span className={style.logoText2}>Token</span>
+          <span className={style.logoText2}>Trade</span>
         </div>
       </Link>
       <div className={style.searchBar}>
