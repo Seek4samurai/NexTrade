@@ -7,9 +7,9 @@ import NFTCard from "../../components/NftCard";
 import { client } from "../../lib/sanityClient";
 
 const style = {
-  bannerImageContainer: `h-[40vh] w-screen flex justify-center items-center`,
+  bannerImageContainer: `h-[40vh] w-full flex justify-center items-center`,
   bannerImage: `w-full h-[40vh] object-cover blur`,
-  infoContainer: `w-screen px-4`,
+  infoContainer: `w-full px-4`,
   midRow: `w-full flex justify-center text-white`,
   headContainer: `w-full flex justify-center text-white`,
   headingRow: `w-full flex justify-start align-left text-white`,
@@ -97,9 +97,9 @@ const Collection = () => {
   }, [collectionId]);
 
   return (
-    <div>
+    <div className="overflow-visible">
       {/* NAVBAR */}
-      <Header />
+      <Header></Header>
 
       {/* BANNER */}
       <div className={style.bannerImageContainer}>

@@ -4,7 +4,7 @@ import React from "react";
 import openseaLogo from "../assets/opensea.png";
 
 const style = {
-  wrapper: `bg-[#1e272e] w-screen px-[3rem] py-[0.8rem] flex `,
+  wrapper: `bg-[#1e272e] w-full px-[3rem] py-[0.8rem] flex `,
   logoContainer: `flex items-center cursor-pointer`,
   logoText: ` ml-[0.8rem] text-white font-semibold text-2xl`,
   logoText2: ` text-[#ffa801] font-bold text-3xl`,
