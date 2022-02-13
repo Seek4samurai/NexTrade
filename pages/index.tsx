@@ -17,7 +17,7 @@ const style = {
   contentWrapper: `flex h-screen relative justify-center flex-wrap items-center`,
 
   TitleContainer: `flex flex-col items-center`,
-  logoContainer: `flex flex-row items-center cursor-pointer`,
+  logoContainer: `flex flex-row items-center`,
   logoText: ` ml-[0.8rem] text-[#202225] font-semibold text-2xl`,
   logoText2: ` text-[#ffa801] font-bold text-3xl`,
 
