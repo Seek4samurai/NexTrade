@@ -5,7 +5,7 @@ import { AiFillPushpin } from "react-icons/ai";
 const style = {
   wrapper: `bg-[#303339] flex flex-col w-[24rem] h-[30rem] my-10 mx-5 rounded-2xl overflow-hidden cursor-pointer group`,
   imgContainer: `h-[70%] w-full overflow-hidden flex justify-center items-center`,
-  nftImg: `w-full object-cover group-hover:h-[27rem] transition-all`,
+  nftImg: `w-full object-cover transform hover:transition duration-500 hover:scale-125`,
   details: `p-4`,
   info: `flex justify-between text-[#e4e8eb] drop-shadow-xl`,
   infoLeft: `max-w-[10rem] flex-0.6 flex-wrap`,

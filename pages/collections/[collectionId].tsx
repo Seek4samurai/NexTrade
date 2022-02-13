@@ -24,6 +24,7 @@ const style = {
   ethLogo: `h-6 mr-2`,
   statName: `text-lg w-full text-center mt-1`,
   description: `text-[#8a939b] text-xl w-max-1/4 flex-wrap mt-4`,
+  nftContainer: `flex flex-wrap pt-4 justify-evenly`,
 };
 
 const Collection = () => {
@@ -192,7 +193,7 @@ const Collection = () => {
       </div>
 
       {/* NFTs SHOWCASE*/}
-      <div className="flex flex-wrap pt-4 space-x-5">
+      <div className={style.nftContainer}>
         {nfts.map((nftItem, id) => (
           <NFTCard
             key={id}
