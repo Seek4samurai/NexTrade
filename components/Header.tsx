@@ -41,7 +41,10 @@ const Header = () => {
         <Link href="/">
           <div className={style.headerItem}>Create</div>
         </Link>
-        <Link href="/collections/0x2Ef3aD81Aa6Cff6cC12566FD5698a2e522eb8D53">
+        {/* <Link href="/collections/0x2Ef3aD81Aa6Cff6cC12566FD5698a2e522eb8D53">
+          <div className={style.headerItem}>Collections</div>
+        </Link> */}
+        <Link href="/collections/allCollection">
           <div className={style.headerItem}>Collections</div>
         </Link>
         <Link href="/">
